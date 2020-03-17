@@ -55,7 +55,7 @@ namespace VMS.TPS
         return;
       }
 
-      string temp = @"\\ntfs16\TherapyPhysics\Clinical Physics\Clinical Bolus";
+      string temp = @"\\ntfs16\TherapyPhysics\Clinical Physics\3D printing project\BolusExport";
 
       string folder = string.Format(@"{0}\Export3D\{1}", temp, MakeFilenameValid(patient.Id));
 
@@ -73,7 +73,7 @@ namespace VMS.TPS
       }
       ExportBolus(context.StructureSet, folder);
 
-      MessageBox.Show("3D Bolus successfully exported to " + folder + ".");
+      MessageBox.Show("3D Bolus successfully exported to TherapyPhysics\\Clinical Physics\\3D printing project\\BolusExport\\" + folder + ".");
 
 
     /*
